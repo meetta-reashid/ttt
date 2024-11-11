@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Verification Application</title>
+    <link rel="icon" href="https://pbs.twimg.com/media/GQB99gQaQAEUOZ7?format=png&name=small">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Full-Screen Background */
+        body {
+            background: linear-gradient(to right, #eef2f3, #8e9eab);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Position Meta Icon in the Top Left */
+        .meta-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+        }
+
+        /* Card Style */
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 400px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Logo and Icon */
+        .logo {
+            width: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .verified-icon {
+            width: 60px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Heading */
+        .heading {
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        /* Description */
+        .description {
+            font-size: 1rem;
+            color: #606770;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        /* Centered Apply Button */
+        .apply-button {
+            display: inline-block;
+            padding: 12px 35px;
+            font-size: 1rem;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0077ff, #004aad);
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            transition: background 0.3s ease, transform 0.2s ease;
+            width: 100%; /* Make the button full-width on mobile */
+            text-align: center;
+        }
+
+        .apply-button:hover {
+            background: linear-gradient(135deg, #0063d1, #00378b);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Info */
+        .footer-info {
+            font-size: 0.9rem;
+            color: #606770;
+            margin-top: 1.5rem;
+        }
+
+        .footer-info a {
+            color: #0077ff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-info a:hover {
+            color: #005bb5;
+            text-decoration: underline;
+        }
+
+        /* Background Image for Larger Screens */
+        .background-image {
+            display: none;
+        }
+
+        @media (min-width: 576px) {
+            .card {
+                padding: 2rem;
+            }
+
+            .background-image {
+                display: block;
+                background-image: url('https://pbs.twimg.com/media/GPUPRg0a8AACTSj?format=jpg&name=small');
+                background-size: cover;
+                height: 200px;
+                border-radius: 12px;
+                margin-top: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Meta Logo Positioned in the Left Corner -->
+<img src="https://cdn.glitch.global/325f7535-a68d-4687-a91c-1e7d9366104a/meta-logo-QVrNRj93.svg?v=1723987211189" alt="Meta Logo" class="meta-logo">
+
+<div class="card">
+    <img src="https://cdn.glitch.global/9c268ed6-4eec-4c0c-9cb5-edf84fe4ab44/blue-verified-badge-18768.png?v=1724612186554" alt="Meta Verified Icon" class="verified-icon">
+    
+    <h1 class="heading">Become Meta Verified</h1>
+
+    <p class="description">Grow your social presence with Meta Verified – a new subscription
+bundle available for creators and businesses on Instagram and
+Facebook.</p>
+
+    <!-- Apply Button Centered in Card -->
+    <a href="request.html" class="apply-button">Apply Now</a>
+
+    <div class="footer-info">
+        <p>For businesses, <a href="request.html">learn more about Meta Verified for businesses.</a></p>
+        <p><small>Features and availability may vary by region.</small></p>
+    </div>
+
+    <div class="background-image"></div>
+</div>
+
+</body>
+</html>
